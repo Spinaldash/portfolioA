@@ -7,6 +7,7 @@ html
     title Michael J. Perez
     link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/assets/css/typeplate.css')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
@@ -17,9 +18,24 @@ html
         h1.small.text-center.text-uppercase.squeeze A full-stack web-developer.
         .divider
         button.btn.primary.white.btn-mj: strong Get in touch
-    .container
-      h1.text-center.text-uppercase Summary
-    
+    .container-fluid
+      .row.summary-fluid
+        .col-xs-3
+        .col-xs-6
+          h1.text-center.text-captialize.white.summary-title Summary
+          .divider
+          p.text-center.summary-text.typl8-delta Hello! My name is Michael J. Perez &
+            | I am a Full-Stack web developer currently based in San Francisco.
+            | I specialize in a modified MEAN stack, 
+            a(href='#') MongoDB, 
+            a(href='#') HapiJS, 
+            a(href='#') NodeJS, 
+            | & 
+            a(href='#') AngularJS. 
+            | I love building one page applications. You can find some of my work 
+            a(href="#") here.
+        .col-xs-3
+
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
     script(src='/vendor/lodash/lodash.min.js')

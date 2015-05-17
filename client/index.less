@@ -1,4 +1,8 @@
-body{
+
+@media (max-width: 600px){
+  html{
+  font-size: 6px;
+  }
 }
 
 @primary: #4fe2ff;
@@ -20,27 +24,41 @@ body{
 .divider {
   height: 2px;
   width: 10vw;
-  margin: 5rem auto;
+  margin: 10vh auto;
   background-color: @primary;
 }
 
+
+// Splash Section
 .splash-container{
-  height: 80vh;
+  height: 100vh;
   .title-container{
     margin-top: 30vh;
   }
   .squeeze{
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    font-size: 2rem;
+    margin-top: .5vh;
+    margin-bottom: .5vh;
+    font-size: 1.309rem;
   }
 
   .splash-title{
-    margin-top: .2rem;
-    margin-bottom: .2rem;
-    font-size: 5rem;
-    letter-spacing: .4rem;
+    margin-top: .2vh;
+    margin-bottom: .2vh;
+    font-size: 5.545rem;
+    letter-spacing: .3rem;
   }
+}
 
+// Summary Section
 
+.summary-fluid{
+  background-color: #333333;
+  min-height: 100vh;
+  color: white;
+  .summary-title{
+    margin-top: 10vh;
+  }
+  .summary-text{
+    /* font-size: 2rem; */
+  }
 }
