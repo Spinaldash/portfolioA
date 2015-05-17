@@ -1,13 +1,15 @@
 {
-  "name": "front-end-prototype",
+  "name": "MJ Portfolio A",
   "version": "0.0.1",
-  "homepage": "https://github.com/chyld/front-end-prototype",
+  "homepage": "https://github.com/spinaldash/portfolioA",
   "authors": [
-    "Chyld Medford <chyld.medford@gmail.com>"
+    "Michael J. Perez <mjosephvp@gmail.com>"
   ],
   "license": "BSD",
   "dependencies": {
-    "lodash": "~3.7.0",
-    "font-awesome": "~4.3.0"
+    "lodash": "~3.8.0",
+    "font-awesome": "~4.3.0",
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.4"
   }
 }
