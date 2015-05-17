@@ -1,19 +1,46 @@
 body{
-  color: hsla(52, 100%, 20%, 1.0);
-  background-color: #FFDC00;
 }
 
-#apollo{
-  border: 5px solid hsla(52, 100%, 20%, 1.0);
-  width: 150px;
-  height: 225px;
+@primary: #4fe2ff;
+
+.primary {
+  background-color: @primary;
 }
 
-#title{
-  position: relative;
-  top: -170px;
-  left: 200px;
-  font-family: monospace;
-  letter-spacing: 10px;
-  font-size: 40px;
+.white{
+  color: white;
+}
+
+.btn-mj{
+  display: block;
+  margin: 0rem auto;
+  font-size: 2rem;
+}
+
+.divider {
+  height: 2px;
+  width: 10vw;
+  margin: 5rem auto;
+  background-color: @primary;
+}
+
+.splash-container{
+  height: 80vh;
+  .title-container{
+    margin-top: 30vh;
+  }
+  .squeeze{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+  }
+
+  .splash-title{
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    font-size: 5rem;
+    letter-spacing: .4rem;
+  }
+
+
 }
