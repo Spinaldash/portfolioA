@@ -18,13 +18,21 @@ html
         h1.small.text-center.text-uppercase.squeeze A full-stack web-developer.
         .divider
         button.btn.primary.white.btn-mj: strong Get in touch
-    .container-fluid
-      .row.summary-fluid
+    .container-fluid.summary-fluid
+      .row
         .col-xs-3
         .col-xs-6
           h1.text-center.text-captialize.white.summary-title Summary
           .divider
-          p.text-center.summary-text.typl8-delta Hello! My name is Michael J. Perez &
+      .row
+        .col-xs-3
+          .side-col
+            .top-half
+              img.icon-image(src='/assets/icons/mongoDB_icon.png')
+            .bottom-half
+              img.icon-image(src='/assets/icons/hapi.png')
+        .col-xs-6
+          p.text-center.summary-text Hello! My name is Michael J. Perez &
             | I am a Full-Stack web developer currently based in San Francisco.
             | I specialize in a modified MEAN stack, 
             a(href='#') MongoDB, 
@@ -35,6 +43,11 @@ html
             | I love building one page applications. You can find some of my work 
             a(href="#") here.
         .col-xs-3
+          .side-col
+            .top-half
+              img.icon-image(src='/assets/icons/angularjs-logo.png')
+            .bottom-half
+              img.icon-image(src='/assets/icons/nodejs.png')
 
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
