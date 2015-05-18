@@ -5,6 +5,7 @@
   }
 }
 
+@letterColor: #333333;
 @primary: #6C8D96;
 
 .primary {
@@ -28,6 +29,9 @@
   background-color: @primary;
 }
 
+.no-padding{
+  padding: 0;
+}
 
 // Splash Section
 .splash-container{
@@ -36,7 +40,7 @@
   background-position: center;
   height: 100vh;
   .title-container{
-    margin-top: 30vh;
+    margin-top: 0vh;
   }
   .squeeze{
     margin-top: .5vh;
@@ -57,9 +61,22 @@
 // Summary Section
 
 .summary-fluid{
-  background-color: #333333;
+  background-color: #DAE5EE;
   min-height: 100vh;
-  color: white;
+  color: @letterColor;
+  .progress-name{
+    text-align: center;
+    width: 100%;
+  }
+  .progress{
+    width: 100%;
+    .progress-bar-alpha{
+      background-color: #6C8D96;
+    }
+    .progress-bar-omega{
+      background-color: #2095d9;
+    }
+  }
   .summary-title{
     margin-top: 5vh;
   }
@@ -90,5 +107,33 @@
       width: 100%;
       bottom: 0vh;
     }
+  }
+}
+
+// ***********************************************
+// ********** Contact Section ********************
+// ***********************************************
+
+.splash-container{
+  background-image: url('/assets/images/chomp_moon.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  .title-container{
+    margin-top: 0vh;
+  }
+  .squeeze{
+    margin-top: .5vh;
+    margin-bottom: .5vh;
+    font-size: 1.309rem;
+    color: #333333;
+  }
+
+  .splash-title{
+    margin-top: .2vh;
+    margin-bottom: .2vh;
+    font-size: 4.236rem;
+    letter-spacing: .3rem;
+    color: #333333
   }
 }

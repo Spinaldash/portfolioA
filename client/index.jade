@@ -13,6 +13,7 @@ html
     link(rel='shortcut icon', href='/favicon.ico')
   body
     #fullpage
+      // Page 1
       .container-fluid.splash-container.section
         .title-container
           h1.small.text-center.text-uppercase.squeeze The Digital Portfolio of
@@ -20,20 +21,74 @@ html
           h1.small.text-center.text-uppercase.squeeze A full-stack web-developer.
           .divider
           button.btn.primary.white.btn-mj: strong Get in touch
-      .container-fluid.summary-fluid.section
-        .row
-          .col-xs-3
-          .col-xs-6
-            h1.text-center.text-captialize.white.summary-title Summary
+      // Page 2
+      .summary-fluid.section
+        .container
+          .row
+            .col-xs-6
+              h4 Summary
+              p.summary-text Hello! My name is Michael J. Perez &
+                | I am a Full-Stack web developer currently based in San Francisco.
+                | I specialize in a modified MEAN stack, 
+                a(href='#') MongoDB, 
+                a(href='#') HapiJS, 
+                a(href='#') NodeJS, 
+                | & 
+                a(href='#') AngularJS. 
+                | I love building one page applications. You can find some of my work 
+                a(href="#") here.
+            .col-xs-6
+          .row
+            .col-xs-6
+              .skills-diagram
+                h4 Skills
+                .row
+                  .col-xs-2.no-padding
+                    .progress-name Angular
+                  .col-xs-10.no-padding
+                    .progress
+                      .progress-bar.progress-bar-striped.progress-bar-alpha(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
+                .row
+                  .col-xs-2.no-padding
+                    .progress-name HTML/CSS
+                  .col-xs-10.no-padding
+                    .progress
+                      .progress-bar.progress-bar-striped.progress-bar-omega(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
+                .row
+                  .col-xs-2.no-padding
+                    .progress-name Debugging
+                  .col-xs-10.no-padding
+                    .progress
+                      .progress-bar.progress-bar-striped.progress-bar-alpha(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
+                .row
+                  .col-xs-2.no-padding
+                    .progress-name Node
+                  .col-xs-10.no-padding
+                    .progress
+                      .progress-bar.progress-bar-striped.progress-bar-omega(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
+      // page 3
+      .section
+      // page 4
+      .section
+        .container-fluid.contact-container.section
+          .title-container
+            h1.small.text-center.text-uppercase.squeeze Liked what you saw?
+            h1.text-center.text-uppercase.splash-title Drop me a line
             .divider
-        .row
-          .col-xs-3
-            .side-col
-              .top-half
-                img.icon-image(src='/assets/icons/mongoDB_icon.png')
-              .bottom-half
-                img.icon-image(src='/assets/icons/hapi.png')
-          .col-xs-6
+            button.btn.primary.white.btn-mj: strong Mail Me
+        //- .row
+        //-   .col-xs-3
+        //-   .col-xs-6
+        //-     h1.text-center.text-captialize.white.summary-title Summary
+        //-     .divider
+        //- .row
+        //-   .col-xs-3
+        //-     .side-col
+        //-       .top-half
+        //-         img.icon-image(src='/assets/icons/mongoDB_icon.png')
+        //-       .bottom-half
+        //-         img.icon-image(src='/assets/icons/hapi.png')
+        //-   .col-xs-6
             p.text-center.summary-text Hello! My name is Michael J. Perez &
               | I am a Full-Stack web developer currently based in San Francisco.
               | I specialize in a modified MEAN stack, 
@@ -44,12 +99,12 @@ html
               a(href='#') AngularJS. 
               | I love building one page applications. You can find some of my work 
               a(href="#") here.
-          .col-xs-3
-            .side-col
-              .top-half
-                img.icon-image(src='/assets/icons/angularjs-logo.png')
-              .bottom-half
-                img.icon-image(src='/assets/icons/nodejs.png')
+        //-   .col-xs-3
+        //-     .side-col
+        //-       .top-half
+        //-         img.icon-image(src='/assets/icons/angularjs-logo.png')
+        //-       .bottom-half
+        //-         img.icon-image(src='/assets/icons/nodejs.png')
 
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/fullpage.js/jquery.fullPage.min.js')
