@@ -72,10 +72,33 @@ html
       .section
         .container-fluid.contact-container.section
           .title-container
-            h1.small.text-center.text-uppercase.squeeze Liked what you saw?
-            h1.text-center.text-uppercase.splash-title Drop me a line
+            h1.small.text-center.squeeze Liked what you saw?
+            h1.text-center.splash-title Drop me a line
             .divider
-            button.btn.primary.white.btn-mj: strong Mail Me
+            ul.list-inline.social
+              li
+                a(href='#', target='_blank')
+                  i.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+              li
+                a(href='#', target='_blank')
+                  i.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-github-alt.fa-stack-1x.fa-inverse
+              li
+                a(href='#', target='_blank')
+                  i.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-linkedin.fa-stack-1x.fa-inverse
+              li
+                a(href='#', target='_blank')
+                  i.fa-stack.fa-lg
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-twitch.fa-stack-1x.fa-inverse
+            button.btn.primary.white.btn-mj
+              i.fa.fa-envelope-o &nbsp
+              strong Mail Me
         //- .row
         //-   .col-xs-3
         //-   .col-xs-6
