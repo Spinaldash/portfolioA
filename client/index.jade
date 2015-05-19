@@ -25,7 +25,7 @@ html
       .summary-fluid.section
         .container
           .row
-            .col-xs-6
+            .col-xs-12.col-sm-6
               h4 Summary
               p.summary-text Hello! My name is Michael J. Perez &
                 | I am a Full-Stack web developer currently based in San Francisco.
@@ -39,7 +39,7 @@ html
                 a(href="#") here.
             .col-xs-6
           .row
-            .col-xs-6
+            .col-xs-12.col-sm-6
               .skills-diagram
                 h4 Skills
                 .row
@@ -68,6 +68,31 @@ html
                       .progress-bar.progress-bar-striped.progress-bar-omega(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
       // page 3
       .section
+        .container.profile-container
+          .row
+            .visible-xs-12
+              .item-container-mobile.visible-xs-block
+                .detail-stub
+                  .logo
+                  .title Brew Mobile
+          .row
+            .col-sm-4.no-padding.hidden-xs
+              .item-container
+                .detail-stub
+                  .logo
+                  .title Brew
+            .col-sm-4.no-padding.hidden-xs
+              .item-container
+                .detail-stub
+                  .logo
+                  .title Brew
+            .col-sm-4.no-padding.hidden-xs
+              .item-container
+                .detail-stub
+                  .logo
+                  .title Brew
+          
+
       // page 4
       .section
         .container-fluid.contact-container.section
