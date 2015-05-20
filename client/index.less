@@ -115,6 +115,12 @@
 // ***********************************************
 
 .profile-container{
+  img{
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    z-index: -1;
+  }
   .logo-brew{
     max-height: 100%;
     width: 100%;
@@ -198,4 +204,28 @@
   .social {
     text-align: center;
   }
+}
+// ***********************************************
+// **************** Hover.css ********************
+// ***********************************************
+
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 10;
 }
