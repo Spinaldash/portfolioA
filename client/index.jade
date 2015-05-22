@@ -5,6 +5,8 @@ html
     meta(http-equiv='X-UA-Compatible', content='IE-edge')
     meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
     title Michael J. Perez
+    link(rel="stylesheet" href="/assets/fancybox/source/jquery.fancybox.css" type="text/css" media="screen")
+    link(rel="stylesheet" href="/assets/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen")
     link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href='/assets/css/typeplate.css')
@@ -42,7 +44,51 @@ html
                   img(src='/assets/images/memSplash.png')
         #slide2.slide
           .container
-            h1.text-center Brew
+            .row
+              .col-xs-6
+                .row
+                  .col-xs-12
+                    a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/brew/Brew_1.png" title="Brew")
+                      img.mjbox.thumbnail(src="/assets/images/brew/Brew_1.png", alt="")
+                  .col-xs-12
+                    a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/brew/Brew_2.png" title="Brew")
+                      img.mjbox.thumbnail(src="/assets/images/brew/Brew_2.png", alt="")
+                  .col-xs-12
+                    a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/brew/Brew_3.png" title="Brew")
+                      img.mjbox.thumbnail(src="/assets/images/brew/Brew_3.png", alt="")
+              .col-xs-6
+                .row
+                  .col-xs-8.no-padding
+                    h1 Brew
+                    h4 The Planeswalker's Compendium
+                  .col-xs-4.no-padding
+                    ul.mj-list
+                      li.mj-right
+                        a(href='#', target='_blank')
+                          i.fa-stack.fa-2x
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-github-alt.fa-stack-1x.fa-inverse
+                      li.mj-right
+                        a(href='#', target='_blank')
+                          i.fa-stack.fa-2x
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-cogs.fa-stack-1x.fa-inverse
+                  .row
+                    .col-xs-12
+                      h3 Abstract:
+                      p  Brew was conceived as a tool to help players prepare for competitive Magic: The Gathering events. Brew is a web-application that allows the user to visualize M:TG cards in unique and powerful ways. Brew showcases powerful custom filtering with Angular, and dynamically creates and completes an API as it is used.
+                    .col-xs-12
+                      h3 What makes it cool:
+                      p Brew was made in two weeks
+                      p Brew dynamically creates/configures its api as it is used
+                      p Brew currently shows every card in Standard play. It can be configured to show every set ever released.
+                    .col-xs-12
+                      h3 Tech Featured:
+                      .labels
+                        span.label.label-success.label-size AWS
+                        span.label.label-primary AWS
+                        span.label.label-primary AWS
+                  
         #slide3.slide
           .container
             h1.text-center Toor
@@ -143,4 +189,6 @@ html
     script(src='/vendor/fullpage.js/jquery.fullPage.min.js')
     script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
     script(src='/vendor/lodash/lodash.min.js')
+    script(type="text/javascript" src="/assets/fancybox/source/helpers/jquery.fancybox-thumbs.js")
+    script(type="text/javascript" src="/assets/fancybox/source/jquery.fancybox.pack.js")
     script(src=isProd ? '/index.min.js' : '/index.js')

@@ -8,4 +8,18 @@ $(document).ready(function() {
 			navigationPosition: 'right',
 			navigationTooltips: ['Intro', 'Portfolio', 'Summary', 'Contact']
     });
+
+    $(".fancybox-thumb").fancybox({
+      prevEffect	: 'none',
+      nextEffect	: 'none',
+      helpers	: {
+        title	: {
+          type: 'outside'
+        },
+        thumbs	: {
+          width	: 50,
+          height	: 50
+        }
+      }
+    });
 });
