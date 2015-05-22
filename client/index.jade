@@ -23,76 +23,92 @@ html
           button.btn.primary.white.btn-mj: strong Get in touch
       // Page 2
       #section1.section
-        .container.profile-container
-          //- .row
-          //-   .visible-xs-12
-          //-     .item-container-mobile.visible-xs-block
-          //-       .detail-stub
-          //-         .logo
-          //-         .title Brew Mobile
-          .row
-            .col-sm-4.no-padding.hvr-grow
-              img(src='/assets/images/brewSplash.png')
-            .col-sm-4.no-padding.hidden-xs.hvr-grow
-              img(src='/assets/images/toorSplash.png')
-            .col-sm-4.no-padding.hidden-xs.hvr-grow
-              img(src='/assets/images/gameSplash.png')
-            .col-sm-4.no-padding.hidden-xs.hvr-grow
-              img(src='/assets/images/photoSplash.png')
-            .col-sm-4.no-padding.hidden-xs.hvr-grow
-              img(src='/assets/images/todoSplash.png')
-            .col-sm-4.no-padding.hidden-xs.hvr-grow
-              img(src='/assets/images/memSplash.png')
+        #slide1.slide
+          .container.profile-container
+            h1.text-center Portfolio
+            .profile-wrapper
+              .row.responsive-row-fix
+                .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
+                  img(src='/assets/images/brewSplash.png')
+                .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
+                  img(src='/assets/images/toorSplash.png')
+                .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
+                  img(src='/assets/images/gameSplash.png')
+                .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
+                  img(src='/assets/images/photoSplash.png')
+                .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
+                  img(src='/assets/images/todoSplash.png')
+                .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
+                  img(src='/assets/images/memSplash.png')
+        #slide2.slide
+          .container
+            h1.text-center Brew
+        #slide3.slide
+          .container
+            h1.text-center Toor
+        #slide4.slide
+          .container
+            h1.text-center Gameswap
+        #slide5.slide
+          .container
+            h1.text-center photoalbum
+        #slide6.slide
+          .container
+            h1.text-center ToDo List
+        #slide7.slide
+          .container
+            h1.text-center Memory
+
 
       
+      //- // page 3
+      //- 
+      //- #section2.summary-fluid.section
+      //-   .container
+      //-     .row
+      //-       .col-xs-12.col-sm-6
+      //-         h4 Summary
+      //-         p.summary-text Hello! My name is Michael J. Perez &
+      //-           | I am a Full-Stack web developer currently based in San Francisco.
+      //-           | I specialize in a modified MEAN stack, 
+      //-           a(href='#') MongoDB, 
+      //-           a(href='#') HapiJS, 
+      //-           a(href='#') NodeJS, 
+      //-           | & 
+      //-           a(href='#') AngularJS. 
+      //-           | I love building one page applications. You can find some of my work 
+      //-           a(href="#") here.
+      //-       .col-xs-6
+      //-     .row
+      //-       .col-xs-12.col-sm-6
+      //-         .skills-diagram
+      //-           h4 Skills
+      //-           .row
+      //-             .col-xs-2.no-padding
+      //-               .progress-name Angular
+      //-             .col-xs-10.no-padding
+      //-               .progress
+      //-                 .progress-bar.progress-bar-striped.progress-bar-alpha(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
+      //-           .row
+      //-             .col-xs-2.no-padding
+      //-               .progress-name HTML/CSS
+      //-             .col-xs-10.no-padding
+      //-               .progress
+      //-                 .progress-bar.progress-bar-striped.progress-bar-omega(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
+      //-           .row
+      //-             .col-xs-2.no-padding
+      //-               .progress-name Debugging
+      //-             .col-xs-10.no-padding
+      //-               .progress
+      //-                 .progress-bar.progress-bar-striped.progress-bar-alpha(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
+      //-           .row
+      //-             .col-xs-2.no-padding
+      //-               .progress-name Node
+      //-             .col-xs-10.no-padding
+      //-               .progressggulp
+      //-                 .progress-bar.progress-bar-striped.progress-bar-omega(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
       // page 3
-      
-      #section2.summary-fluid.section
-        .container
-          .row
-            .col-xs-12.col-sm-6
-              h4 Summary
-              p.summary-text Hello! My name is Michael J. Perez &
-                | I am a Full-Stack web developer currently based in San Francisco.
-                | I specialize in a modified MEAN stack, 
-                a(href='#') MongoDB, 
-                a(href='#') HapiJS, 
-                a(href='#') NodeJS, 
-                | & 
-                a(href='#') AngularJS. 
-                | I love building one page applications. You can find some of my work 
-                a(href="#") here.
-            .col-xs-6
-          .row
-            .col-xs-12.col-sm-6
-              .skills-diagram
-                h4 Skills
-                .row
-                  .col-xs-2.no-padding
-                    .progress-name Angular
-                  .col-xs-10.no-padding
-                    .progress
-                      .progress-bar.progress-bar-striped.progress-bar-alpha(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
-                .row
-                  .col-xs-2.no-padding
-                    .progress-name HTML/CSS
-                  .col-xs-10.no-padding
-                    .progress
-                      .progress-bar.progress-bar-striped.progress-bar-omega(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
-                .row
-                  .col-xs-2.no-padding
-                    .progress-name Debugging
-                  .col-xs-10.no-padding
-                    .progress
-                      .progress-bar.progress-bar-striped.progress-bar-alpha(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
-                .row
-                  .col-xs-2.no-padding
-                    .progress-name Node
-                  .col-xs-10.no-padding
-                    .progressggulp
-                      .progress-bar.progress-bar-striped.progress-bar-omega(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
-      // page 4
-      #section3.section
+      #section2.section
         .container-fluid.contact-container
           .title-container
             h1.small.text-center.squeeze Liked what you saw?

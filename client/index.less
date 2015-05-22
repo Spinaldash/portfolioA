@@ -113,8 +113,24 @@
 // ***********************************************
 // ********** Profile Section *****768px is small*
 // ***********************************************
-
+#slide1{
+  background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+  background: -webkit-linear-gradient(#DAE5EE, #6C8D96);
+  background: linear-gradient(#DAE5EE,#6C8D96);
+}
 .profile-container{
+  .profile-wrapper{
+     margin: 5vh 5vw;
+    .responsive-row-fix{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .portfolio-panel{
+      @media (max-width: 600px){
+        width: 20vh;
+      }
+    }
+  }
   img{
     width: 100%;
     border: 1px solid black;
@@ -185,7 +201,7 @@
   background-position: center;
   height: 100vh;
   .title-container{
-    margin-top: 0vh;
+    margin-top: 35vh;
   }
   .squeeze{
     margin-top: .5vh;
