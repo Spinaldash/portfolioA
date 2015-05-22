@@ -22,4 +22,10 @@ $(document).ready(function() {
         }
       }
     });
+
+    $('[title!=""]').qtip({
+      style: {
+        classes: 'qtip-bootstrap qtip-shadow'
+      }
+    });
 });
