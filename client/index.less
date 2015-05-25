@@ -56,9 +56,15 @@
     letter-spacing: .3rem;
     color: #333333
   }
+  @media (max-width: 600px){
+    .splash-title{
+    font-size: 3.19rem;
+    letter-spacing: .0625rem;
+    }
+  }
 }
 
-// Summary Section
+/* // Summary Section
 
 .summary-fluid{
   background-color: #DAE5EE;
@@ -81,7 +87,7 @@
     margin-top: 5vh;
   }
   .summary-text{
-    /* font-size: 2rem; */
+    font-size: 2rem;
   }
   .side-col{
     height: 70vh;
@@ -110,11 +116,12 @@
 
   }
 }
-
+ */
 // ***********************************************
 // ********** Profile Section *****768px is small*
 // ***********************************************
 #section1{
+  background-color: #E0E0E0;
   .responsive-text{
     font-size: 1rem;
   }
@@ -126,6 +133,30 @@
   }
   li{
     font-size: 1.025rem;
+  }
+  .mj-header{
+    display: block;
+    position: relative;
+  }
+  .mj-line::before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #bdbdbd;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+  }
+  .mj-line{
+    span{
+      background-color: #E0E0E0;
+      background-size: auto auto;
+      position: relative;
+      padding: 0 10px;
+      white-space: pre-wrap;
+    }
   }
   .mjbox{
     max-width: 20vw;
@@ -160,11 +191,13 @@
   }
 }
 #slide1{
-  background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
-  background: -webkit-linear-gradient(#DAE5EE, #6C8D96);
-  background: linear-gradient(#DAE5EE,#6C8D96);
+/*   background: -webkit-gradient(linear, top left, bottom left, from(#E0E0E0), to(#DAE5EE));
+background: -webkit-linear-gradient(#E0E0E0, #DAE5EE);
+background: linear-gradient(#E0E0E0,#DAE5EE); */
+background-color: #E0E0E0;
 }
 .profile-container{
+
   .profile-wrapper{
      margin: 5vh 5vw;
     .responsive-row-fix{

@@ -21,28 +21,33 @@ html
         .title-container
           h1.small.text-center.text-uppercase.squeeze The Digital Portfolio of
           h1.text-center.text-uppercase.splash-title Michael J. Perez
-          h1.small.text-center.text-uppercase.squeeze A full-stack web-developer.
+          h1.small.text-center.text-uppercase.squeeze A full stack web developer.
           .divider
           button.btn.primary.white.btn-mj: strong Get in touch
       // Page 2
       #section1.section
         #slide1.slide
           .container.profile-container
-            h1.text-center Portfolio
+            .mj-header
+              h1.mj-line.text-center
+                span Portfolio
             .profile-wrapper
               .row.responsive-row-fix
                 .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
-                  img(src='/assets/images/brewSplash.png')
+                  a(href='/#portfolio/1')
+                    img(src='/assets/images/brewSplash.png')
                 .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
-                  img(src='/assets/images/toorSplash.png')
+                  a(href='/#portfolio/2')
+                    img(src='/assets/images/toorSplash.png')
                 .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
-                  img(src='/assets/images/gameSplash.png')
-                .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
-                  img(src='/assets/images/photoSplash.png')
-                .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
-                  img(src='/assets/images/todoSplash.png')
-                .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
-                  img(src='/assets/images/memSplash.png')
+                  a(href='/#portfolio/3')
+                    img(src='/assets/images/gameSplash.png')
+                //- .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
+                //-   img(src='/assets/images/photoSplash.png')
+                //- .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
+                //-   img(src='/assets/images/todoSplash.png')
+                //- .col-sm-4.col-xs-6.no-padding.hvr-grow.portfolio-panel
+                //-   img(src='/assets/images/memSplash.png')
         #slide2.slide
           .container
             .row
@@ -94,119 +99,120 @@ html
                       img.mjbox.thumbnail(src="/assets/images/brew/Brew_3.png", alt="Brew3")
                   
         #slide3.slide
-                    .container
-                      .row
-                        .col-xs-12.col-sm-6
-                          .row
-                            .col-xs-8.no-padding
-                              h1 Toor
-                              h4 Crowdsource your vacation
-                            .col-xs-4.no-padding
-                              ul.mj-list
-                                li.responsive-text
-                                  a(href='#', target='_blank', title='Visit the Github Repo')
-                                    i.fa-stack.fa-2x
-                                      i.fa.fa-circle.fa-stack-2x
-                                      i.fa.fa-github-alt.fa-stack-1x.fa-inverse
-                                li.responsive-text
-                                  a(href='#', target='_blank', title='Visit the Site')
-                                    i.fa-stack.fa-2x
-                                      i.fa.fa-circle.fa-stack-2x
-                                      i.fa.fa-cogs.fa-stack-1x.fa-inverse
-                            .row
-                              .col-xs-12
-                                h3 Abstract:
-                                p  Toor is the project that won our 4 man team the LAUNCH 2015 hackathon SABRE API award. We wanted to create a better way to plan your next vacation. TOOR utilizes the SABRE API to provide you with destination options and Twitter to help build an itinerary. I worked closely with another Front-End Developer on this project.
-                              .col-xs-12.hidden-xs
-                                h3 What makes it cool:
-                                ul
-                                  li Winner of a 2015 Launch Hackathon award.
-                                  li Powered by the Sabre api and the Twitter api.
-                                  li Created in 48 hours by a team of 4.
-                              .col-xs-12
-                                h3 Tech Featured:
-                                .labels
-                                  .featured
-                                    span(title='TwitterAPI').label.label-warning.mj-label TwitterAPI
-                                    span(title='SabreAPI').label.label-warning.mj-label SabreAPI
-                                    span(title='MongoDB').label.label-info.mj-label MongoDB
-                                    span(title='Jquery').label.label-info.mj-label Jquery
-                                    span(title='HTML/CSS').label.label-info.mj-label HTML/CSS
-                                    span(title='NodeJS').label.label-info.mj-label NodeJS
-                                    span(title='HapiJS').label.label-info.mj-label HapiJS
-                        .col-xs-12.col-sm-6
-                          .row
-                            .col-xs-4.col-sm-12
-                              a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/Toor/Toor_1.png" )
-                                img.mjbox.thumbnail(src="/assets/images/Toor/Toor_1.png", alt="Toor1")
-                            .col-xs-4.col-sm-12
-                              a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/Toor/Toor_2.png")
-                                img.mjbox.thumbnail(src="/assets/images/Toor/Toor_2.png", alt="Toor2")
-                            .col-xs-4.col-sm-12
-                              a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/Toor/Toor_3.png")
-                                img.mjbox.thumbnail(src="/assets/images/Toor/Toor_3.png", alt="Toor3")
+          .container
+            .row
+              .col-xs-12.col-sm-6
+                .row
+                  .col-xs-8.no-padding
+                    h1 Toor
+                    h4 Crowdsource your vacation
+                  .col-xs-4.no-padding
+                    ul.mj-list
+                      li.responsive-text
+                        a(href='#', target='_blank', title='Visit the Github Repo')
+                          i.fa-stack.fa-2x
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-github-alt.fa-stack-1x.fa-inverse
+                      li.responsive-text
+                        a(href='#', target='_blank', title='Visit the Site')
+                          i.fa-stack.fa-2x
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-cogs.fa-stack-1x.fa-inverse
+                  .row
+                    .col-xs-12
+                      h3 Abstract:
+                      p  Toor is the project that won our 4 man team the LAUNCH 2015 hackathon SABRE API award. We wanted to create a better way to plan your next vacation. TOOR utilizes the SABRE API to provide you with destination options and Twitter to help build an itinerary. I worked closely with another Front-End Developer on this project.
+                    .col-xs-12.hidden-xs
+                      h3 What makes it cool:
+                      ul
+                        li Winner of a 2015 Launch Hackathon award.
+                        li Powered by the Sabre api and the Twitter api.
+                        li Created in 48 hours by a team of 4.
+                    .col-xs-12
+                      h3 Tech Featured:
+                      .labels
+                        .featured
+                          span(title='TwitterAPI').label.label-warning.mj-label TwitterAPI
+                          span(title='SabreAPI').label.label-warning.mj-label SabreAPI
+                          span(title='MongoDB').label.label-info.mj-label MongoDB
+                          span(title='Jquery').label.label-info.mj-label Jquery
+                          span(title='HTML/CSS').label.label-info.mj-label HTML/CSS
+                          span(title='NodeJS').label.label-info.mj-label NodeJS
+                          span(title='HapiJS').label.label-info.mj-label HapiJS
+              .col-xs-12.col-sm-6
+                .row
+                  .col-xs-4.col-sm-12
+                    a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/Toor/Toor_1.png" )
+                      img.mjbox.thumbnail(src="/assets/images/Toor/Toor_1.png", alt="Toor1")
+                  .col-xs-4.col-sm-12
+                    a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/Toor/Toor_2.png")
+                      img.mjbox.thumbnail(src="/assets/images/Toor/Toor_2.png", alt="Toor2")
+                  .col-xs-4.col-sm-12
+                    a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/Toor/Toor_3.png")
+                      img.mjbox.thumbnail(src="/assets/images/Toor/Toor_3.png", alt="Toor3")
         #slide4.slide
           .container
-            h1.text-center Gameswap
-        #slide5.slide
-          .container
-            h1.text-center photoalbum
-        #slide6.slide
-          .container
-            h1.text-center ToDo List
-        #slide7.slide
-          .container
-            h1.text-center Memory
+            .row
+              .col-xs-12.col-sm-6
+                .row
+                  .col-xs-8.no-padding
+                    h1 Gameswap
+                    h4(style='padding-left: .3rem') Trade your games
+                  .col-xs-4.no-padding
+                    ul.mj-list
+                      li.responsive-text
+                        a(href='https://github.com/cadenichols/game-swap', target='_blank', title='Visit the Github Repo')
+                          i.fa-stack.fa-2x
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-github-alt.fa-stack-1x.fa-inverse
+                      li.responsive-text
+                        a(href='https://aqueous-crag-7207.herokuapp.com/#', target='_blank', title='Visit the Site')
+                          i.fa-stack.fa-2x
+                            i.fa.fa-circle.fa-stack-2x
+                            i.fa.fa-cogs.fa-stack-1x.fa-inverse
+                  .row
+                    .col-xs-12
+                      h3 Abstract:
+                      p  Toor is the project that won our 4 man team the LAUNCH 2015 hackathon SABRE API award. We wanted to create a better way to plan your next vacation. TOOR utilizes the SABRE API to provide you with destination options and Twitter to help build an itinerary. I worked closely with another Front-End Developer on this project.
+                    .col-xs-12.hidden-xs
+                      h3 What makes it cool:
+                      ul
+                        li Winner of a 2015 Launch Hackathon award.
+                        li Powered by the Sabre api and the Twitter api.
+                        li Created in 48 hours by a team of 4.
+                    .col-xs-12
+                      h3 Tech Featured:
+                      .labels
+                        .featured
+                          span(title='AngularJS').label.label-warning.mj-label AngularJS
+                          span(title='SabreAPI').label.label-warning.mj-label SabreAPI
+                          span(title='MongoDB').label.label-info.mj-label MongoDB
+                          span(title='Jquery').label.label-info.mj-label Jquery
+                          span(title='HTML/CSS').label.label-info.mj-label HTML/CSS
+                          span(title='NodeJS').label.label-info.mj-label NodeJS
+                          span(title='HapiJS').label.label-info.mj-label HapiJS
+              .col-xs-12.col-sm-6
+                .row
+                  .col-xs-4.col-sm-12
+                    a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/gameswap/Gameswap_1.png" )
+                      img.mjbox.thumbnail(src="/assets/images/gameswap/Gameswap_1.png", alt="Gameswap1")
+                  .col-xs-4.col-sm-12
+                    a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/gameswap/Gameswap_2.png")
+                      img.mjbox.thumbnail(src="/assets/images/gameswap/Gameswap_2.png", alt="Gameswap2")
+                  .col-xs-4.col-sm-12
+                    a.fancybox-thumb(rel="fancybox-thumb", href="/assets/images/gameswap/Gameswap_3.png")
+                      img.mjbox.thumbnail(src="/assets/images/gameswap/Gameswap_3.png", alt="Gameswap3")
+        //- #slide5.slide
+        //-   .container
+        //-     h1.text-center photoalbum
+        //- #slide6.slide
+        //-   .container
+        //-     h1.text-center ToDo List
+        //- #slide7.slide
+        //-   .container
+        //-     h1.text-center Memory
 
 
-      
-      //- // page 3
-      //- 
-      //- #section2.summary-fluid.section
-      //-   .container
-      //-     .row
-      //-       .col-xs-12.col-sm-6
-      //-         h4 Summary
-      //-         p.summary-text Hello! My name is Michael J. Perez &
-      //-           | I am a Full-Stack web developer currently based in San Francisco.
-      //-           | I specialize in a modified MEAN stack, 
-      //-           a(href='#') MongoDB, 
-      //-           a(href='#') HapiJS, 
-      //-           a(href='#') NodeJS, 
-      //-           | & 
-      //-           a(href='#') AngularJS. 
-      //-           | I love building one page applications. You can find some of my work 
-      //-           a(href="#") here.
-      //-       .col-xs-6
-      //-     .row
-      //-       .col-xs-12.col-sm-6
-      //-         .skills-diagram
-      //-           h4 Skills
-      //-           .row
-      //-             .col-xs-2.no-padding
-      //-               .progress-name Angular
-      //-             .col-xs-10.no-padding
-      //-               .progress
-      //-                 .progress-bar.progress-bar-striped.progress-bar-alpha(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
-      //-           .row
-      //-             .col-xs-2.no-padding
-      //-               .progress-name HTML/CSS
-      //-             .col-xs-10.no-padding
-      //-               .progress
-      //-                 .progress-bar.progress-bar-striped.progress-bar-omega(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
-      //-           .row
-      //-             .col-xs-2.no-padding
-      //-               .progress-name Debugging
-      //-             .col-xs-10.no-padding
-      //-               .progress
-      //-                 .progress-bar.progress-bar-striped.progress-bar-alpha(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
-      //-           .row
-      //-             .col-xs-2.no-padding
-      //-               .progress-name Node
-      //-             .col-xs-10.no-padding
-      //-               .progressggulp
-      //-                 .progress-bar.progress-bar-striped.progress-bar-omega(role='progressbar', aria-valuenow='80', aria-valuemin='0', area-valuemax='100', style='width: 90%')
-      // page 3
       #section2.section
         .container-fluid.contact-container
           .title-container

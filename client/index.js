@@ -4,9 +4,9 @@ $(document).ready(function() {
       verticleCentered: false,
       fitToSection: false,
 			navigation: true,
-      anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+      anchors: ['intro', 'portfolio', 'contact'],
 			navigationPosition: 'right',
-			navigationTooltips: ['Intro', 'Portfolio', 'Summary', 'Contact'],
+			navigationTooltips: ['Intro', 'Portfolio', 'Contact'],
       controlArrows: false,
     });
 
