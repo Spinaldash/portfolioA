@@ -6,7 +6,8 @@ $(document).ready(function() {
 			navigation: true,
       anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
 			navigationPosition: 'right',
-			navigationTooltips: ['Intro', 'Portfolio', 'Summary', 'Contact']
+			navigationTooltips: ['Intro', 'Portfolio', 'Summary', 'Contact'],
+      controlArrows: false,
     });
 
     $(".fancybox-thumb").fancybox({

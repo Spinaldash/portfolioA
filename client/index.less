@@ -1,7 +1,7 @@
 
 @media (max-width: 600px){
   html{
-  font-size: 14px;
+  font-size: 12px;
   }
 }
 
@@ -116,10 +116,10 @@
 // ***********************************************
 #section1{
   .responsive-text{
-    font-size: .80rem;
+    font-size: 1rem;
   }
   p{
-    font-size: .825rem;
+    font-size: 1.025rem;
   }
   .mjbox{
     max-width: 20vw;
@@ -132,11 +132,16 @@
   }
   .labels{
     text-align: center;
+    margin-bottom: 2vh;
     .featured{
       .mj-label{
         font-size: .75rem;
         margin-right: .5rem;
+        @media (max-width: 600px){
+          font-size: .60rem;
+        }
       }
+
     }
     .others{
       .mj-label{
