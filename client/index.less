@@ -123,9 +123,19 @@ a{
 // ********** Profile Section *****768px is small*
 // ***********************************************
 #section1{
+  position: relative;
   background-color: #E0E0E0;
-  .mj-title{
-
+  .mj-left{
+    position:absolute;
+    top: 10vh;
+    left: 2vw;
+    z-index: 2;
+  }
+  .mj-right{
+    position:absolute;
+    top: 10vh;
+    right: 2vw;
+    z-index: 2;
   }
   .responsive-text{
     font-size: 1rem;
@@ -284,7 +294,7 @@ background-color: #E0E0E0;
 // ***********************************************
 
 .contact-container{
-  background-image: url('/assets/images/chomp_moon.jpeg');
+  background-image: url('/assets/images/clouded_bridge.jpeg');
   background-size: cover;
   background-position: center;
   height: 100vh;

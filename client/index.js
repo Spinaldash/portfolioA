@@ -10,6 +10,16 @@ $(document).ready(function() {
       controlArrows: false,
     });
 
+    $('#move-right').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSlideRight();
+			});
+
+    $('#move-left').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSlideLeft();
+			});
+
     $(".fancybox-thumb").fancybox({
       prevEffect	: 'none',
       nextEffect	: 'none',

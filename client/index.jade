@@ -23,9 +23,12 @@ html
           h1.text-center.text-uppercase.splash-title Michael J. Perez
           h1.small.text-center.text-uppercase.squeeze A full stack web developer.
           .divider
-          button.btn.primary.white.btn-mj: strong Get in touch
+          button.btn.primary.white.btn-mj
+            a.white(href='#contact'): strong Get in touch
       // Page 2
       #section1.section
+        i#move-left.fa.fa-chevron-left.mj-left.fa-3x
+        i#move-right.fa.fa-chevron-right.mj-right.fa-3x
         #slide1.slide
           .container.profile-container
             .mj-header
@@ -243,7 +246,7 @@ html
                   i.fa-stack.fa-lg
                     i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-twitch.fa-stack-1x.fa-inverse
-            button.btn.primary.white.btn-mj
+            button(title='mjosephvp@gmail.com').btn.primary.white.btn-mj
               i.fa.fa-envelope-o &nbsp
               strong Mail Me
 
