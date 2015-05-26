@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/css?family=Alex+Brush);
 @media (max-width: 600px){
   html{
   font-size: 12px;
@@ -11,7 +11,9 @@
 .primary {
   background-color: @primary;
 }
-
+a{
+  color: #44656B;
+}
 .white{
   color: white;
 }
@@ -122,6 +124,9 @@
 // ***********************************************
 #section1{
   background-color: #E0E0E0;
+  .mj-title{
+
+  }
   .responsive-text{
     font-size: 1rem;
   }
@@ -149,13 +154,17 @@
   top: 50%;
   margin-top: -1px;
   }
+  .portfolio-subtitle{
+    padding-left: .3rem;
+  }
   .mj-line{
     span{
       background-color: #E0E0E0;
       background-size: auto auto;
       position: relative;
-      padding: 0 10px;
+      padding: 0 1.5rem;
       white-space: pre-wrap;
+      font-family: 'Alex Brush', cursive;
     }
   }
   .mjbox{
@@ -323,4 +332,11 @@ background-color: #E0E0E0;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   z-index: 10;
+}
+
+.label-info{
+  background-color: #44656B;
+}
+.label-warning{
+  background-color: #ABD0DC;
 }
