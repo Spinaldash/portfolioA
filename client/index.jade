@@ -27,8 +27,8 @@ html
             a.white(href='#contact'): strong Get in touch
       // Page 2
       #section1.section
-        i#move-left.fa.fa-chevron-left.mj-left.fa-3x
-        i#move-right.fa.fa-chevron-right.mj-right.fa-3x
+        i#move-left.fa.fa-chevron-left.mj-left.fa-3x.pointer
+        i#move-right.fa.fa-chevron-right.mj-right.fa-3x.pointer
         #slide1.slide
           .container.profile-container
             .mj-header
@@ -220,35 +220,36 @@ html
 
 
       #section2.section
-        .container-fluid.contact-container
-          .title-container
-            h1.small.text-center.squeeze Liked what you saw?
-            h1.text-center.splash-title Drop me a line
-            .divider
-            ul.list-inline.social
-              li
-                a(href='https://twitter.com/spinaldash', target='_blank')
-                  i.fa-stack.fa-lg
-                    i.fa.fa-circle.fa-stack-2x
-                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
-              li
-                a(href='https://github.com/spinaldash', target='_blank')
-                  i.fa-stack.fa-lg
-                    i.fa.fa-circle.fa-stack-2x
-                    i.fa.fa-github-alt.fa-stack-1x.fa-inverse
-              li
-                a(href='https://www.linkedin.com/in/mjosephvp', target='_blank')
-                  i.fa-stack.fa-lg
-                    i.fa.fa-circle.fa-stack-2x
-                    i.fa.fa-linkedin.fa-stack-1x.fa-inverse
-              li
-                a(href='http://www.twitch.tv/spinaldash/profile', target='_blank')
-                  i.fa-stack.fa-lg
-                    i.fa.fa-circle.fa-stack-2x
-                    i.fa.fa-twitch.fa-stack-1x.fa-inverse
-            button(title='mjosephvp@gmail.com').btn.primary.white.btn-mj
-              i.fa.fa-envelope-o &nbsp
-              strong Mail Me
+        .container-fluid.contact-container.no-padding
+          .container-fluid.contact-wrap.no-padding
+            .title-container
+              h1.small.text-center.squeeze Liked what you saw?
+              h1.text-center.splash-title Drop me a line
+              .divider(style='background-color: white')
+              ul.list-inline.social
+                li
+                  a(href='https://twitter.com/spinaldash', target='_blank')
+                    i.fa-stack.fa-lg
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                li
+                  a(href='https://github.com/spinaldash', target='_blank')
+                    i.fa-stack.fa-lg
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-github-alt.fa-stack-1x.fa-inverse
+                li
+                  a(href='https://www.linkedin.com/in/mjosephvp', target='_blank')
+                    i.fa-stack.fa-lg
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-linkedin.fa-stack-1x.fa-inverse
+                li
+                  a(href='http://www.twitch.tv/spinaldash/profile', target='_blank')
+                    i.fa-stack.fa-lg
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-twitch.fa-stack-1x.fa-inverse
+              button(title='mjosephvp@gmail.com').btn.primary.white.btn-mj
+                i.fa.fa-envelope-o &nbsp
+                strong Mail Me
 
     script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/fullpage.js/jquery.fullPage.min.js')
